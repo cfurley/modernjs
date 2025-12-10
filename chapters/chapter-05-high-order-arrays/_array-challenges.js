@@ -1,7 +1,7 @@
 /** 
  * CHALLENGE 1
  * Given an array of people.
- * Create an array of youngPeople <- everyone under 25 years old.
+ * Return an array of youngPeople <- everyone under 25 years old.
  */
 
 const people = [
@@ -19,3 +19,4 @@ youngPeople = people.filter((person) => {
 });
 
 console.log(youngPeople);
+
