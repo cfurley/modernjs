@@ -1,0 +1,24 @@
+/**
+ * Object Literal (user)
+ */
+const user = {
+  name: 'John Doe',
+  age: 24,
+  email: 'johndoe@email.com'
+};
+console.log(user.name, user.email);
+
+/**
+ * Nested Objects (user2)
+ */
+const user2 = {
+  name: 'John Doe',
+  age: 24,
+  isAdmin: true,
+  address: {
+    street: '123 N Street',
+    state: 'AK',
+    zip: '11111'
+  }
+}
+console.log(user2.name, user2.address);
