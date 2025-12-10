@@ -20,3 +20,19 @@ youngPeople = people.filter((person) => {
 
 console.log(youngPeople);
 
+
+
+/**
+ * CHALLENGE 2
+ * Given an array of numbers
+ * Return the sum of the positive & even integers.
+ */
+
+const numbers = [2, -30, 50, 20, -12, -9, 7];
+
+const positiveSum = numbers.reduce( ( acc, cur ) => {
+  if (cur % 2 === 0 && cur > 0) return acc + cur;
+  else return acc;
+});
+
+console.log(positiveSum);
