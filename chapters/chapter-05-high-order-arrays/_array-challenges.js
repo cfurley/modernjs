@@ -36,3 +36,21 @@ const positiveSum = numbers.reduce( ( acc, cur ) => {
 });
 
 console.log(positiveSum);
+
+
+
+/**
+ * CHALLENGE 3
+ * Given an array of words
+ * Return an array of Capitalized Words.
+ */
+
+const words = ['coder', 'programmer', 'developer', 'enGineer'];
+
+const wordsCapital = words.map( ( word ) => {
+  word = word.toLowerCase();
+  word = word[0].toUpperCase() + word.substring(1,);
+  return word;
+});
+
+console.log(wordsCapital);
