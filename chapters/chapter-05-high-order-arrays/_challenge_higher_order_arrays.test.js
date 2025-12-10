@@ -1,4 +1,4 @@
-import { challengeOne, challengeTwo, challengeThree } from './HIGHER_ORDERS_CHALLENGE.js'
+import { challengeOne, challengeTwo, challengeThree } from './_challenge_higher_order_arrays.js'
 
 console.log(challengeOne([
     { firstName: 'Caleb', lastName: 'Furley', email: 'caleb.furley@gmail.com', age: '24'},
