@@ -7,28 +7,16 @@
 </head>
 <body>
   <h1>AI Generated POST Message.</h1>
-  <label for="msg">Message:</label>
-  <input id="msg" type="text" placeholder="Type a message" />
-  <button id="postBtn" type="button">Send</button>
+  <form action="/submit-endpoint" method="post">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" />
+  <br />
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" />
+  <br />
+  <input type="submit" value="Submit Data" />
+</form>
 
-  <div id="result" aria-live="polite" style="margin-top:1rem;"></div>
-
-  <script>
-    document.getElementById('postBtn').addEventListener('click', async () => {
-      const msg = document.getElementById('msg').value || 'Hello';
-      try {
-        const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ title: msg, body: msg })
-        });
-        const data = await res.json();
-        // show returned post data on the page
-        document.getElementById('result').textContent = 'Posted: ' + (data.title ?? JSON.stringify(data));
-      } catch (err) {
-        document.getElementById('result').textContent = 'Error: ' + err.message;
-      }
-    });
   </script>
 </body>
 </html>
