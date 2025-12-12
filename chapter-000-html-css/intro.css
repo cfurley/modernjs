@@ -1,15 +1,31 @@
 body {
   background-color: black;
+  color: white;
 }
 h1 {
-  color: yellow;
+  color: #ffff00;
+  border-style: solid;
+  border-color: #ffff00;
+  border-radius: 5px;
 }
 #p1 {
-  color:red;
+  color: red;
+  border-style: dashed;
+  border-color: red;
+
 }
 #p2 {
-  color:green;
+  color: green;
+  border-style: dotted;
+  border-top-color: #ffff00;
+  border-bottom-color: red;
+  border-left-color: green;
+  border-right-color: blue;
 }
 #p3 {
-  color:blue;
+  color: blue;
+  border-style: double;
+}
+#shadow {
+  text-shadow: 3px 3px 5px;
 }
