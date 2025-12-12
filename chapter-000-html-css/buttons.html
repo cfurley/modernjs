@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons in HTML</title>
+</head>
+<body>
+  <div classname="container">
+    <a href="./turing_machine_m.html">
+      <button style="font-size: 25px; background-color: azure; border-radius: 5px;">Turing Machine M</button>
+    </a>
+  </div>
+  <div classname="container">
+    <button onclick="sayHello()">Say Hello!</button>
+    <p id="greeting">...</p>
+  </div>
+</body>
+
+<script>
+  function sayHello() {
+    const greeting = document.getElementById("greeting");
+    greeting.innerText = "Hello World, y Hola Mundo!";
+  }
+</script>
+
+</html>
