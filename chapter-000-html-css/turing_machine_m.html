@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turing Machine M</title>
+</head>
+<body>
+     <div classname="container">
+    <h4>Turing Machine M
+    <pre>
+      &Sigma; = {0,1}
+      L(M) = {w|w contains twice as many 0s than 1s.}</h4>
+    </pre>
+    <ol>
+      <li>Start at the beginning of the Tape.</li>
+      <li>
+        "step R until:
+        <ul>1: write X, GOTO 3</ul>
+        <ul>_: write _, GOTO 4</ul>
+      </li>
+      <li>
+        step R until:
+        <ul>
+          0, write Y, step R until
+          <ul>0, write Y, GOTO 2</ul>
+          <ul>_, write _, REJECT</ul>
+        </ul>
+        <ul>_, write _, REJECT</ul>
+      </li>
+      <li>
+        step R until:
+        <ul>0, write 0, REJECT</ul>
+        <ul>_, write _, ACCEPT</ul>
+      </li>
+    </ol>
+   </div>
+</body>
+</html>
