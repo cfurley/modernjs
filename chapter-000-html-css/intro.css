@@ -24,13 +24,14 @@ p {
   color: green;
   border-style: dotted;
   border-top-color: #ffff00;
-  border-bottom-color: red;
+  border-bottom-color: blue;
   border-left-color: green;
-  border-right-color: blue;
+  border-right-color: red;
 }
 #p3 {
   color: blue;
   border-style: double;
+  
 }
 #shadow {
   text-shadow: 3px 3px 5px;
