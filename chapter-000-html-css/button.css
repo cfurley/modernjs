@@ -1,0 +1,19 @@
+body {
+  background-color: black;
+  color: green;
+}
+#button {
+  font-size: 1.0em;
+  background-color: gray;
+}
+#button:hover {
+  font-size: 1.1em;
+  background-color: green;
+}
+#button:active {
+  font-size: 1.1em;
+  background-color: red;
+}
+#output {
+  visibility: hidden;
+}
