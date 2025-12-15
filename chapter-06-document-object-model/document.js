@@ -1,8 +1,12 @@
-let output;
-output = document.all;
 
+const header = document.getElementById('header');
+console.log(header);
 
-output = document.getElementById('header');
+header.remove();
 
+const newHeader = document.createElement("h4");
+newHeader.id = "newHeader";
+newHeader.style.color = "yellow";
+newHeader.innerText = "Hola Mundo!";
 
-console.log(output);
+document.body.appendChild(newHeader);
